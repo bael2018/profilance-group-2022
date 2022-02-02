@@ -4,7 +4,9 @@ const initStyles = {
     heigth: '350px',
     display: 'flex',
     justifyContent: 'center',
-    alignContent: 'center'
+    alignContent: 'center',
+    fontSize: '35px',
+    marginTop: '70px'
 }
 
 const Error = () => {
