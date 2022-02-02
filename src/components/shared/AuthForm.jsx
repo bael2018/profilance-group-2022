@@ -3,7 +3,7 @@ import cls from '../../scss/components/_authmodal.module.scss'
 import { VscChromeClose } from 'react-icons/vsc'
 import { loginSuccess, setModal, setUser } from "../../store/slices/newsSlice"
 import { useState } from "react"
-import { setNotification } from "../../store/slices/notification"
+import { setNotification } from "../../store/slices/notificationSlice"
 import { auth , visitors } from "../../api"
 
 const AuthModal = () => {

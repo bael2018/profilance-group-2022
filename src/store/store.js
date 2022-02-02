@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import authReducer from './slices/newsSlice'
 import { newsApi } from './query/newsApi'
-import notificationRefucer from './slices/notification'
+import notificationRefucer from './slices/notificationSlice'
 
 export const store = configureStore({
     reducer: {

@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import cls from '../../scss/components/_notification.module.scss'
-import { clearNotification } from '../../store/slices/notification'
+import { clearNotification } from '../../store/slices/notificationSlice'
 
 const Notification = () => {
     const { status , title , description , isActive } = useSelector(state => state.notify)

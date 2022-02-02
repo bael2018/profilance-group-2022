@@ -3,7 +3,7 @@ import { useDispatch , useSelector } from 'react-redux'
 import { VscChromeClose } from 'react-icons/vsc'
 import { setEditModal } from '../../store/slices/newsSlice'
 import { useState } from 'react'
-import { setNotification } from '../../store/slices/notification'
+import { setNotification } from '../../store/slices/notificationSlice'
 import { useAddNewsMutation } from '../../store/query/newsApi'
 import { getDate } from '../../utilities/date'
 

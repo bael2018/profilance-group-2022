@@ -2,7 +2,7 @@ import { useDispatch , useSelector } from 'react-redux'
 import cls from '../../scss/components/_navbar.module.scss'
 import { CustomLink } from '../elements/CustomLink'
 import { clearUser, logoutSuccess, setEditModal, setModal } from '../../store/slices/newsSlice'
-import { setNotification } from '../../store/slices/notification'
+import { setNotification } from '../../store/slices/notificationSlice'
 import { visitors } from '../../api'
 
 const Navbar = () => {

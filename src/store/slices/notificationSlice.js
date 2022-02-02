@@ -7,7 +7,7 @@ const initialState = {
     isActive: false
 }
 
-const notification = createSlice({
+const notificationSlice = createSlice({
     name: 'auth',
     initialState,
     reducers: {
@@ -26,5 +26,5 @@ const notification = createSlice({
     }
 })
 
-export const { setNotification , clearNotification } = notification.actions
-export default notification.reducer
+export const { setNotification , clearNotification } = notificationSlice.actions
+export default notificationSlice.reducer
