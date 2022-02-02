@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+.search{
+    margin-top: 30px;
+
+    &_header{
+        height: 60px;
+
+        input{
+            width: 100%;
+            border: 2px solid $app-main-color;
+            outline: none;
+            height: 100%;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 0 15px;
+            transition: .3s;
+            color: $app-main-color;
+            box-sizing: border-box;
+
+            &:focus{
+                box-shadow: 0px 0px 2px 2px $app-main-color;
+            }
+
+            &::placeholder{
+                color: $app-main-color;
+            }
+        }
+    }
+
+    &_body{
+        margin-top: 30px;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+    }
+}

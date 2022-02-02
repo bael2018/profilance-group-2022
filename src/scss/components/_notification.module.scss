@@ -1,0 +1,37 @@
+
+.notification{
+    position: fixed;
+    transition: .3s;
+    right: 40px;
+    z-index: 3;
+    top: -130px;
+    width: 230px;
+    height: 70px;
+    border-radius: 7px;
+    background: white;
+    border: 1px solid #00ce00;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4,p{
+        margin: 0;
+    }
+
+    h4{
+        height: 25%;
+        margin-top: 5px;
+    }
+
+    p{
+        font-size: 15px;
+        height: 42%;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+
+    &_active{
+        top: 40px;
+    }
+}

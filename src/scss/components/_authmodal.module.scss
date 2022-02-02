@@ -1,0 +1,47 @@
+@import '../variables.scss';
+
+.modal{
+    @include modalStyles();
+
+    &_wrapper{
+        @include modalWrapperStyles();
+        @include modalWrapperAdaptationStyles();
+
+        @media screen and (max-width: 470px){
+
+            &_close{
+                right: 45%;
+                top: -40px;
+                font-size: 31px;
+            } 
+        }
+
+        &_body{
+            h4{
+                color: $app-main-color;
+                text-align: center;
+                font-size: 25px;
+                margin: 0;
+
+                @media screen and (max-width: 470px){
+
+                    &{
+                        font-size: 21px;
+                    } 
+                }
+            }
+
+            form{
+                margin-top: 15px;
+
+                input{
+                   @include modalInputStyles()
+                }
+
+                button{
+                   @include modalButtonStyles()
+                }
+            }
+        }
+    }
+}
